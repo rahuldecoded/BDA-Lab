@@ -18,7 +18,7 @@ public class SWRDriver extends Configured implements Tool {
 
 	public int run(String args[]) throws IOException 
 	{ 
-	   if (args.length < 3) 
+	   if (args.length < 2) 
 	   { 
 	       System.out.println("Please give valid inputs"); 
 	       return -1; 
@@ -27,7 +27,6 @@ public class SWRDriver extends Configured implements Tool {
 	   JobConf conf = new JobConf(SWRDriver.class); 
 	   FileInputFormat.setInputPaths(conf, new Path(args[0])); 
 	   FileOutputFormat.setOutputPath(conf, new Path(args[1]));
-	   conf.set("outputFile", args[2]);
 	   conf.setMapperClass(SWRMapper.class); 
 	   conf.setReducerClass(SWRReducer.class); 
 	   conf.setMapOutputKeyClass(LongWritable.class); 
