@@ -22,4 +22,12 @@
 5. Now it's time to export your project as jar file.
 	- **Note:** while create the jar files you can mention the class that contains the main method if you \
 	don't mention it then it's compulsory to mention the class name in the command life but if you do \
-	mention it then you can skip writing the name of the java file in the command line.  
+	mention it then you can skip writing the name of the java file in the command line.
+
+
+## Data
+1. Weather Data Mining
+	- [1901.txt](https://drive.google.com/file/d/1FvUFA2w1_wQN-DZ-Aw44INA4n_N__qM4/view?usp=sharing)
+	- [1902.txt](https://drive.google.com/file/d/1OES03G8M9XU4G3DhPT0Cvald6giuWbc_/view?usp=sharing)
+2. Store Data Mining
+	- [purchase.txt](https://drive.google.com/file/d/1v_nJbyclaJt_5cdeBKFU423cdlfMQMEX/view?usp=sharing)
