@@ -16,22 +16,18 @@ public class WSReducer extends MapReduceBase implements Reducer<Text,
 
 // Reduce function 
 public void reduce(Text key, Iterator<IntWritable> value,  
-              OutputCollector<Text, IntWritable> output,  
-                       Reporter rep) throws IOException 
-{ 
+                        OutputCollector<Text, IntWritable> output,  
+                        Reporter rep) throws IOException { 
 
-   int count = 0; 
+    int count = 0; 
 
-   // Counting the frequency of each words 
-   while (value.hasNext())  
-   { 
-       IntWritable i = value.next(); 
-       count += i.get(); 
-   } 
+    // Counting the frequency of each words 
+    while (value.hasNext()) { 
+        IntWritable i = value.next(); 
+        count += i.get(); 
+    } 
 
-   if (key.toString().compareTo("coding") == 0) {
-	   output.collect(key, new IntWritable(count)); 
-   }
-   
-} 
+  
+    output.collect(key, new IntWritable(count)); 
+    } 
 } 
