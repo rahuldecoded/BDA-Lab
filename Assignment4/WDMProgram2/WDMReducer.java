@@ -21,8 +21,7 @@ public class WDMReducer extends MapReduceBase implements Reducer<IntWritable,
 	
 	static String outputFile = "C:\\hadoop\\lab_data\\WDM-Data\\output.txt";
 	
-	// Function To Insert a clean line in a File
-	// Clean Line: Line without stop words
+	// Function to insert a line in a file where temperature in greater than 30
 	public static void insertToFile(String args) {
 		File fileObj = null;
 		try {
