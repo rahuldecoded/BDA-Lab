@@ -17,12 +17,12 @@ import org.apache.hadoop.mapred.Reporter;
 import org.apache.hadoop.mapred.JobConf; 
 
 public class SWRReducer extends MapReduceBase implements Reducer<LongWritable, 
-                             Text, Text, NullWritable> { 
+                             Text, NullWritable, Text> { 
 	
 	
 	//Reduce function 
 	public void reduce(LongWritable key, Iterator<Text> value,  
-	            OutputCollector<Text, NullWritable> output,  
+	            OutputCollector<NullWritable, Text> output,  
 	                     Reporter rep) throws IOException 
 	{ 
 		output.collect(null, value.next());   
