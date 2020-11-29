@@ -31,8 +31,8 @@ public class SWRDriver extends Configured implements Tool {
 	   conf.setReducerClass(SWRReducer.class); 
 	   conf.setMapOutputKeyClass(LongWritable.class); 
 	   conf.setMapOutputValueClass(Text.class); 
-	   conf.setOutputKeyClass(Text.class); 
-	   conf.setOutputValueClass(NullWritable.class);
+	   conf.setOutputKeyClass(NullWritable.class); 
+	   conf.setOutputValueClass(Text.class);
 	   JobClient.runJob(conf); 
 	   return 0; 
 	} 
