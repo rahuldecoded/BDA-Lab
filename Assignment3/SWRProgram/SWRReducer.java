@@ -25,11 +25,6 @@ public class SWRReducer extends MapReduceBase implements Reducer<LongWritable,
 	            OutputCollector<Text, NullWritable> output,  
 	                     Reporter rep) throws IOException 
 	{ 
-		
-		while (value.hasNext()) {
-			insertToFile(value.next().toString());
-		}
-		
-		output.collect(new Text("Output File Created"), null);  
+		output.collect(null, value.next());   
 	} 
 } 
