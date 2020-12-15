@@ -26,10 +26,18 @@
 
 
 ## Steps to Run Pig Assignment
+
+- Assignment 1
 1. Create a folder named `Output` in the folder where you'll be having the script.
 2. Run the script using, `pig -x local script_name.pig`
 3. If the script run successfully then a folder will be generate in the `Output`
 
+- Assignment 2
+1. Need to rename the text files, make it Map Reduce compatiple and keep them the text files in a folder named `txt` and keep `txt`  in the folder where your pig scripts are.
+2. Create a folder `Output` within the folder where you'll be having the scripts
+3. First run the script.pig `pig -x local script.pig`
+4. You can see inside `Output` there will be new 3 folders.
+5. To run search.pig, use `pig -x local search.pig`
 
 
 ## Data
