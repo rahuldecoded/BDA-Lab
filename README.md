@@ -13,7 +13,7 @@
 2. Install **Hadoop** *3.1.4*
 
 
-## Steps
+## Steps to Run Map Reduce Assignments
 1. Create a project eg. WSProgram
 2. In the project (WSProgram) create a package (WSPackage)
 3. Create (at least) 3 files for Driver, Mapper and Reducer
@@ -23,6 +23,13 @@
 	- **Note:** while create the jar files you can mention the class that contains the main method if you \
 	don't mention it then it's compulsory to mention the class name in the command life but if you do \
 	mention it then you can skip writing the name of the java file in the command line.
+
+
+## Steps to Run Pig Assignment
+1. Create a folder named `Output` in the folder where you'll be having the script.
+2. Run the script using, `pig -x local script_name.pig`
+3. If the script run successfully then a folder will be generate in the `Output`
+
 
 
 ## Data
